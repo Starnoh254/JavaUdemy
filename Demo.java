@@ -10,6 +10,11 @@ class Human {
         this.age = 100;
     }
 
+    // what is a static block ? 
+    static {
+        System.out.println("Static block ran !");
+    }
+
 
     // Parameterized Constructor
     public Human(String name , int age){
@@ -50,11 +55,11 @@ public class Demo {
     public static void main (String args[]) {
 
         // Human obj = new Human("Ogwambo",25);
-        // Human obj = new Human("IshowSpeed");
-        // // obj.age = 11;
-        // // obj.name = "Navin";
+        Human obj = new Human("IshowSpeed");
+        // obj.age = 11;
+        // obj.name = "Navin";
 
-        // System.out.println("Name : " + obj.getName() + " age : " + obj.getAge());
+        System.out.println("Name : " + obj.getName() + " age : " + obj.getAge());
 
         // obj.setName("Starnoh John");
         // obj.setAge(23);
