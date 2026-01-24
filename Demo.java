@@ -89,3 +89,13 @@ public class Demo {
         return num * factorial(num - 1);
     }
 }
+
+
+// Naming Conventions 
+
+// class and interface - Calc , Runnable 
+// variable and method - marks , show()
+// constants - PIE , BRAND 
+
+// show_my_marks = snake casing , not used in Java 
+// use camel case showMyMarks() 
