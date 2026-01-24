@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Human {
     private int age;
     private String name ;
@@ -58,8 +61,18 @@ public class Demo {
 
         // System.out.println("Name : " + obj.getName() + " age : " + obj.getAge());
 
-        int result = factorial(5);
-        System.out.println(result);
+        // int result = factorial(5);
+        // System.out.println(result);
+
+        // List<Integer> and int[] nums in java 
+
+        int[] nums = {1,2,3};
+        nums[0] = 10;
+
+
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
 
     }
 
