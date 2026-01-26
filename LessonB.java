@@ -2,13 +2,14 @@ public class LessonB {
     public static void main(String[] args){
         // Inheritance 
 
-        AdvCalc calc = new AdvCalc();
+        ScientificCalc calc = new ScientificCalc();
         int r1 = calc.add(3,7);
         int r2 = calc.sub(12, 8);
         int r3 = calc.multiply(5, 8);
         int r4 = calc.divide(1000, 200);
+        double r5 = calc.power(5, 5);
 
-        System.out.println(r1 + " " + r2 + " " + r3 + " " + r4);
+        System.out.println(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5);
     }
 }
 
