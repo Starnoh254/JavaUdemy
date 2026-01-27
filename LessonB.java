@@ -13,4 +13,8 @@ public class LessonB {
     }
 }
 
+// Java doesn't support multiple inheritance 
+// For multiple inheritance , java introduced interfaces 
+// in Java , A class can only extend one class
+
 
