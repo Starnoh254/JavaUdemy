@@ -1,5 +1,5 @@
 // method override in Java
-
+package lessons;
 class Animal {
     public void makeSound(){
         System.out.println("Animal makes sound");

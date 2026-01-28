@@ -1,3 +1,4 @@
+package lessons;
 public class LessonB {
     public static void main(String[] args){
         // Inheritance 

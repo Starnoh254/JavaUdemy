@@ -1,3 +1,4 @@
+package lessons;
 // this and super method 
 // create a new object of type B , prints : 
 // in A 

@@ -1,3 +1,4 @@
+package lessons;
 public class LessonA {
 
     public static void main(String[] args) {
