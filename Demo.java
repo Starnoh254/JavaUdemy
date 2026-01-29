@@ -1,5 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
+import lessons.User;
+import lessons.Animal;
+
+
+class Dog extends Animal {
+    void bark () {
+        makeSound();
+    }
+}
 
 class Human {
     private int age;
@@ -78,6 +87,9 @@ public class Demo {
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
         numbers.add(2);
+
+        User user = new User();
+        // user.username = "Starnoh";  // this is wrong , cannot be accessed
 
     }
 
