@@ -25,7 +25,6 @@ public class LessonI {
 
         System.out.println(y);
 
-
         // Eplicit(manual typecasting)
 
         double a = 10.5;
