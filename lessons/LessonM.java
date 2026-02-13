@@ -3,11 +3,19 @@ package lessons;
 public class LessonM {
     public static void main(String[] args){
 
-        int x;
-        if (true) {
-            x = 10;
+        // int x;
+        // if (true) {
+        //     x = 10;
+        // }
+        // System.out.println(x);
+
+        int x = 0;
+
+        if (x != 0 && 10 / x > 1) {
+            System.out.println("Hello");
         }
-        System.out.println(x);
+
+        System.out.println("Done");
 
         int a = 20;
         int b = 10;
