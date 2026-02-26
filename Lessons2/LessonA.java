@@ -12,6 +12,8 @@ public class LessonA {
 
         Roles role = Roles.USER;
 
+        System.out.println(role.getClass().getSuperclass());
+
         switch (role) {
 
 
