@@ -1,0 +1,76 @@
+package Lessons2;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class LessonR {
+    public static void main(String[] args){
+
+        // using scanner class for input
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Enter your name: ");
+        // String name = scan.nextLine();
+
+        // System.out.println("Enter your age : ");
+        // int age = scan.nextInt();
+
+        // scan.nextLine();
+
+        // System.out.println("Enter your City : ");
+        // String city = scan.nextLine();
+
+        // System.out.println("Name: " + name + ", Age: " + age + ", City: " + city);
+
+        // scan.close();
+
+        // using BufferedReader for input 
+        try {
+
+            InputStreamReader reader = new InputStreamReader(System.in);
+            BufferedReader br = new BufferedReader(reader);
+
+            System.out.println("Enter your name: ");
+            String name = br.readLine();
+
+            System.out.println("Enter your age: ");
+            int age = Integer.parseInt(br.readLine());
+
+            System.out.println("Enter your city: ");
+            String city = br.readLine();
+
+            System.out.println("Name: " + name + ", Age: " + age + ", City: " + city);
+            
+
+
+
+            br.close();
+            reader.close();
+
+        }
+        catch(IOException e){
+            System.out.println("An error occured " + e.getMessage());
+            e.printStackTrace();
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
