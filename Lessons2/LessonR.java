@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 public class LessonR {
     public static void main(String[] args) throws IOException{
 
+        
+
         // using scanner class for input
         // Scanner scan = new Scanner(System.in);
 
