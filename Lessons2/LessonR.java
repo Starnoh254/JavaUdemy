@@ -1,13 +1,12 @@
 package Lessons2;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+
 
 public class LessonR {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
 
         // using scanner class for input
         // Scanner scan = new Scanner(System.in);
@@ -28,10 +27,11 @@ public class LessonR {
         // scan.close();
 
         // using BufferedReader for input 
-        try {
 
-            InputStreamReader reader = new InputStreamReader(System.in);
-            BufferedReader br = new BufferedReader(reader);
+
+        // try with resources in java
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));){
+
 
             System.out.println("Enter your name: ");
             String name = br.readLine();
@@ -44,11 +44,6 @@ public class LessonR {
 
             System.out.println("Name: " + name + ", Age: " + age + ", City: " + city);
             
-
-
-
-            br.close();
-            reader.close();
 
         }
         catch(IOException e){
