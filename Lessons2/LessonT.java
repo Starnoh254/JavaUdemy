@@ -10,14 +10,14 @@ class ThreadImpl extends Thread{
     }
 }
 
-class RunnableThread implements Runnable {
+// class RunnableThread implements Runnable {
 
-    @Override
-    public void run() {
-        System.out.println("Runnable Thread Running");
-    }
+//     @Override
+//     public void run() {
+//         System.out.println("Runnable Thread Running");
+//     }
     
-}
+// }
 
 
 public class LessonT {
@@ -26,7 +26,11 @@ public class LessonT {
         ThreadImpl t1 = new ThreadImpl();
         t1.start();
 
-        RunnableThread r = new RunnableThread();
+        // lets use lambda expressions
+
+        Runnable r = () -> System.out.println("Runnable Thread Running");
+
+
         Thread t2 = new Thread(r);
         t2.start();
 
